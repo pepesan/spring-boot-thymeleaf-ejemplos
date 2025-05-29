@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de Bienvenida</title>
+</head>
+<body>
+<!-- Inserta el fragmento -->
+<div th:replace="fragments :: mainMenu"></div>
+<header>
+    <h1>¡Bienvenido!</h1>
+</header>
+
+<section>
+    <p>Esta es la plantilla <strong>welcome.html</strong>.</p>
+    <p th:text="${usuario}">Usuario por defecto</p>
+</section>
+</body>
+</html>
