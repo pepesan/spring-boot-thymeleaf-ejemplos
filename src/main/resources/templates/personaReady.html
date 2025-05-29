@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Inicio</title>
+    <link th:replace="fragments :: bootstrapCss"></link>
+    <div th:replace="fragments :: mainCss"></div>
+
+</head>
+<body>
+<!-- Inserta el fragmento -->
+<div th:replace="fragments :: mainMenu"></div>
+
+<header>
+    <h1>Bienvenido a mi aplicación Spring Boot con Thymeleaf</h1>
+</header>
+<div>
+    <h2>Nombre: <span th:text="${persona.nombre}"></span></h2>
+    <h2>Apellido: <span th:text="${persona.apellidos}"></span></h2>
+    <h2>Edad: <span th:text="${persona.edad}"></span></h2>
+</div>
+<script th:replace="fragments :: bootstrapJS"></script>
+</body>
+</html>
+
