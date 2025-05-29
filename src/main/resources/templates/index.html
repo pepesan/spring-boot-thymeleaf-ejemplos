@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Inicio</title>
+    <link th:replace="fragments :: bootstrapCss"></link>
     <div th:replace="fragments :: mainCss"></div>
+
 </head>
 <body>
 <!-- Inserta el fragmento -->
@@ -12,7 +14,7 @@
 <header>
     <h1>Bienvenido a mi aplicación Spring Boot con Thymeleaf</h1>
 </header>
-
+<script th:replace="fragments :: bootstrapJS"></script>
 </body>
 </html>
 
