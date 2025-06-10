@@ -5,15 +5,15 @@
     <title>Enviar ID</title>
 
     <!-- CSS de Bootstrap -->
-    <link th:replace="fragments :: bootstrapCss"/>
+    <link th:replace="~{fragments :: bootstrapCss}"/>
 
     <!-- CSS principal -->
-    <div th:replace="fragments :: mainCss"></div>
+    <div th:replace="~{fragments :: mainCss}"></div>
 </head>
 <body>
 
 <!-- Menú común -->
-<div th:replace="fragments :: mainMenu"></div>
+<div th:replace="~{fragments :: mainMenu}"></div>
 
 <header>
     <h1>Formulario de Envío de ID</h1>
@@ -36,6 +36,6 @@
 </section>
 
 <!-- JS de Bootstrap -->
-<script th:replace="fragments :: bootstrapJS"></script>
+<script th:replace="~{fragments :: bootstrapJS}"></script>
 </body>
 </html>

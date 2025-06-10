@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Spring Boot Thymeleaf Properties Example</title>
-    <link th:replace="fragments :: bootstrapCss"></link>
-    <div th:replace="fragments :: mainCss"></div>
+    <link th:replace="~{fragments :: bootstrapCss}"></link>
+    <div th:replace="~{fragments :: mainCss}"></div>
 </head>
 
 <body>
 <!-- Inserta el fragmento -->
-<div th:replace="fragments :: mainMenu"></div>
+<div th:replace="~{fragments :: mainMenu}"></div>
 <div class="starter-template">
     <h1>Spring Boot Web Thymeleaf Properties Example</h1>
     <h2>
