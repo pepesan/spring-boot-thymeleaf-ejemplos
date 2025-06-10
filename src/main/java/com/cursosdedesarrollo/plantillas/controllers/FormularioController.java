@@ -17,12 +17,11 @@ public class FormularioController {
     @GetMapping()
     public String lista(Model modelo) {
         // inicializamos el objeto
-        Persona persona= new Persona("","",0);
+        Persona persona= new Persona("Laura","Merino",22);
         // lo pasamos a la vista
         modelo.addAttribute("persona", persona);
         // seleccionamos la plantilla a presentar
         return "formulario";
-
     }
     @PostMapping("/create")
     public ModelAndView createUser(@Valid Persona persona, BindingResult result) {
