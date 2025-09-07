@@ -1,4 +1,4 @@
-# 🚀 Mi Aplicación Spring Boot
+# 🚀 Mi Aplicación Spring Boot (Desarrollo)
 
 Este proyecto es una aplicación desarrollada con **Spring Boot**.  
 La aplicación está configurada para arrancar en el **puerto 8081** y permite acceder a la interfaz desde un navegador web.
